@@ -108,3 +108,7 @@ const newIacIssuesMap = newIacIssues.reduce(arrToFileMap, {});
 const netNewIacIssues = compareIacIssueMaps(oldIacIssuesMap, newIacIssuesMap)
 
 printIacIssues(netNewIacIssues)
+
+if (netNewIacIssues.length > 0) {
+    process.exit(1)
+}
