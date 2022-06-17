@@ -1,12 +1,12 @@
 {
     "name": "snyk-iac-delta",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "type": "module",
     "bin": "index.js",
     "scripts": {
         "main": "node index.js"
     },
     "dependencies": {
-        "minimist": "^1.2.5"
+        "minimist": "^1.2.6"
     }
 }
