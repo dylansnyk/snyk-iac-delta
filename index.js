@@ -25,6 +25,11 @@ const paramsAreValid = () => {
 // construct list of IaC vulnerabilities 
 const createIacIssueArray = (snykOutput) => {
 
+    if (snykOutput['error']) {
+        console.log(snykOutput['error'])
+        process.exit(0)
+    }
+
     const iacIssues = [];
 
     snykOutput.forEach(file => {
